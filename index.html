@@ -16,7 +16,7 @@
             background-color: #f0f0f0;
         }
         .game-container {
-            position: relative; /* Para posicionar elementos hijos absolutamete */
+            position: relative; /* Para posicionar elementos hijos absolutamente */
             width: 800px; /* Doble del tamaño habitual (ajusta según tus necesidades) */
             height: 400px; /* Doble del tamaño habitual */
             background-color: #000;
@@ -26,15 +26,18 @@
         .donation-form {
             position: absolute;
             bottom: 10px; /* Posicionado a 10px desde el fondo */
-            right: 10px; /* Posicionado a 10px desde la derecha */
+            left: 50%; /* Centrado horizontalmente */
+            transform: translateX(-50%); /* Ajusta la posición para centrar */
             background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-            padding: 10px;
+            padding: 8px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
         .donation-form input[type="image"] {
             display: block;
             margin: 0 auto;
+            width: 150px; /* Reducir el tamaño del botón */
+            height: auto; /* Mantener proporción */
         }
     </style>
 </head>
